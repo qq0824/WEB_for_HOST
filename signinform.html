@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원 등록</title>
+    <style>
+        table {
+            margin: 0 auto;
+            
+            /*border-collapse: collapse;*/
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #000;
+            font-size: 2rem;
+        }
+        td{
+             background-color: white;
+        }
+        #co1 {
+            background-color: darkgray;
+        }
+
+        .title {
+            background-color: skyblue;
+        }
+
+        #send {
+            text-align: center;
+        }
+        #introduce{
+            width: 99%;
+            height: 100%;
+            margin: 0px;
+        }
+        input, select{
+            height: 3rem;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body background="./images/bg1.gif"> 
+   
+    <form action="#" method="get">
+        <table>
+            <colgroup>
+                <col id="co1">
+            </colgroup>
+            <tr>
+                <th colspan="2" class="title">회원 기본 정보</th>
+            </tr>
+            <tr>
+                <th><label for="id">아이디</label></th>
+                <td><input type="text" size="15" maxlength="12" name="id" id="id" title="아이디 입력" placeholder="Id" pattern="^[a-zA-Z0-9]{4,12}$" required="required">
+                    4~12자의 영문 대소문자와 숫자로만 입력</td>
+            </tr>
+            <tr>
+                <th><label for="pw">비밀번호</label></th>
+                <td><input type="password" size="15" maxlength="12" name="pw" id="pw" title="비밀번호 입력" placeholder="P/W" pattern="^[a-zA-Z0-9]{4,12}$" required="required">
+                    4~12자의 영문 대소문자와 숫자로만 입력</td>
+            </tr>
+            <tr>
+                <th><label for="rpw">비민번호 확인</label></th>
+                <td><input type="password" size="15" maxlength="12" name="rpw" id="rpw" title="비민번호 입력" placeholder="Re P/W" pattern="^[a-zA-Z0-9]{4,12}$" required="required"></td>
+            </tr>
+            <tr>
+                <th><label for="email">메일주소</label></th>
+                <td><input type="email" name="email" id="email" title="이메일 입력" placeholder="Email" required="required">
+                    예) id@domain.com</td>
+            </tr>
+            <tr>
+                <th><label for="name">이름</label></th>
+                <td><input type="text" name="name" id="name" placeholder="Name"  pattern="^[가-힣]{1,7}$" required="required"></td>
+            </tr>
+            <tr>
+                <th colspan="2" class="title">개인 신상 정보</th>
+            </tr>
+            <tr>
+                <th><label for="birthid">주민등록번호</label></th>
+                <td>
+                    <input type="text" name="fb" id="birthid" size="8" maxlength="6" required="required" pattern="\d{6}" title="주민등록번호 앞 6자리 숫자" placeholder="Front Birth">
+                    -
+                    <input type="text" name="bb" size="8" maxlength="7" required="required" pattern="\d{7}" title="주민등록번호 뒤 7자리 숫자" placeholder="Bakc Birth">
+                    예) 123456-1234567
+                </td>
+            </tr>
+            <tr>
+                <th><label for="birthday">생일</label></th>
+                <td>
+                    <select id="birthday" name="year" required="required">
+                        <option selected="selected" value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                        <option>2008</option>
+                        <option>2007</option>
+                        <option>2006</option>
+                        <option>2005</option>
+                        <option>2004</option>
+                        <option>2003</option>
+                        <option>2002</option>
+                        <option>2001</option>
+                        <option>2000</option>
+                        <option>1999</option>
+                        <option>1998</option>
+                        <option>1997</option>
+                        <option>1996</option>
+                        <option>1995</option>
+                        <option>1994</option>
+                        <option>1993</option>
+                        <option>1992</option>
+                        <option>1991</option>
+                        <option>1990</option>
+                        <option>1989</option>
+                        <option>1988</option>
+                        <option>1987</option>
+                        <option>1986</option>
+                        <option>1985</option>
+                        <option>1984</option>
+                        <option>1983</option>
+                        <option>1982</option>
+                        <option>1981</option>
+                        <option>1980</option>
+                    </select>
+                    년
+                    <select name="month" required="required">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    월
+                    <select name="day" required="required">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    일
+                </td>
+            </tr>
+            <tr>
+                <th>관심분야</th>
+                <td>
+                    <input type="checkbox" name="ck_com" title="컴퓨터">컴퓨터
+                    <input type="checkbox" name="ck_in" title="인터넷">인터넷
+                    <input type="checkbox" name="ck_tv" title="여행">여행
+                    <input type="checkbox" name="ck_mv" title="영화감상">영화감상
+                    <input type="checkbox" name="ck_mr" title="음악감상">음악감상
+                </td><!--checkbox의 네임을 동일하게????-->
+            </tr>
+            <tr>
+                <th><label for="introduce">자기소개</label></th>
+                <td>
+                    <textarea name="introduce" id="introduce" cols="50" rows="20" required="required"></textarea>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div id="send">
+            <input type="submit" value="회원 가입">
+            <input type="reset" value="다시 입력">
+        </div>
+
+    </form>
+
+</body></html>
