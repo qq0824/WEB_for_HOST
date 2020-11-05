@@ -15,7 +15,7 @@ export class Ball {
 
         this.bounceWindow(stageWidth, stageHeight);
 
-        //this.bounceBlock(block);
+        this.bounceBlock(block);
 
         ctx.fillStyle = '#fdd700';
         ctx.beginPath();
@@ -45,8 +45,8 @@ export class Ball {
         const minY = block.y - this.radius;
         const maxY = block.maxY + this.radius;
 
-        if (this.x > mixX && this.x < maxX && this.y > minY && this.y < maxY) {
-            const x1 = Math.abs(minX = this.x);
+        if (this.x > minX && this.x < maxX && this.y > minY && this.y < maxY) {
+            const x1 = Math.abs(minX - this.x);
             const x2 = Math.abs(this.x - maxX);
             const y1 = Math.abs(minY - this.y);
             const y2 = Math.abs(this.y - maxY);
