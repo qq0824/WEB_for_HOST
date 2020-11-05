@@ -1,5 +1,5 @@
-import {Point} from './point.js';
-import {Dialog} from './dialog.js';
+import {Point} from './movingbox_point.js';
+import {Dialog} from './movingbox_dialog.js';
 
 class App {
     constructor(){
