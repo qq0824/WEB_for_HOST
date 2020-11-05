@@ -1,3 +1,4 @@
+//탱탱볼
 import {
     Ball
 } from './ball.js';
@@ -37,7 +38,7 @@ class App {
         this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeight);
 
         this.block.draw(this.ctx);
-        this.ball.draw(this.ctx, this.stageWidth, this.stageHeight);
+        this.ball.draw(this.ctx, this.stageWidth, this.stageHeight, this.block);
         
     
     }
