@@ -1,4 +1,4 @@
-import {Point} from './mvpoint.js';
+import {Point} from './mvbox_point.js';
 
 const FOLLOW_SPEED = 0.08;
 const ROTATE_SPEED = 0.12;
