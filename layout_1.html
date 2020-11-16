@@ -1,24 +1,72 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <title>내 사이트</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>내 사이트</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
+
 <body>
-  <h1><a href="layout.html">WEB</a></h1>
-  <div id="grid">
-    <ol>
-      <li><a href="layout_1.html">HTML</a></li>
-      <li><a href="layout_2.html">CSS</a></li>
-      <li><a href="layout_3.html">JavaScript</a></li>
-    </ol>
-    <div id="article">
-        <h2>HTML</h2>
-        <p>
-          여긴 HTML이야.!! or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
-        </p>
-      </div>
-  </div>
-  </body>
-  </html>
+    <h1><a href="layout.html">WEB</a></h1>
+    <div id="grid">
+        <ol>
+            <li><a href="layout_1.html">로또번호 추첨</a></li>
+            <li><a href="layout_2.html">CSS</a></li>
+            <li><a href="layout_3.html">JavaScript</a></li>
+        </ol>
+        <div id="article">
+            <h2>로또번호 추첨</h2>
+            <p id="result">여기 결과 나옴</p>
+        </div>
+    </div>
+    <script>
+        
+        // arr[5][6]
+        var arr = new Array(5);
+        var amount = 6;
+        
+        for (var i = 0; i < arr.length; i++) {
+            arr[i] = new Array(6);
+        }
+        for(var u = 0; u < 5; u++) {
+            for(var i = 0; i < amount; i++) {
+                arr[u][i] = Math.round(Math.random()*45) + 1;
+                for(var j = 0; j < i; j++) {
+                       if(arr[u][i]==arr[u][j]) {
+                        i--;
+                    } 
+                }
+
+            }
+            arr[u].sort(function(a,b) {
+               return a-b; 
+            });
+            
+        }
+        
+        var element = document.getElementById("result");
+        for(j = 0; j < 5; j++) {
+            element.innerText = 
+                arr[0][0] + ", " + arr[0][1] + ", " + arr[0][2] + ", " + arr[0][3] + ", " + arr[0][4] + ", " + arr[0][5]+"\n"+
+                arr[1][0] + ", " + arr[1][1] + ", " + arr[1][2] + ", " + arr[1][3] + ", " + arr[1][4] + ", " + arr[1][5]+"\n"+
+                arr[2][0] + ", " + arr[2][1] + ", " + arr[2][2] + ", " + arr[2][3] + ", " + arr[2][4] + ", " + arr[2][5]+"\n"+
+                arr[3][0] + ", " + arr[3][1] + ", " + arr[3][2] + ", " + arr[3][3] + ", " + arr[3][4] + ", " + arr[3][5]+"\n"+
+                arr[4][0] + ", " + arr[4][1] + ", " + arr[4][2] + ", " + arr[4][3] + ", " + arr[4][4] + ", " + arr[4][5]+"\n";
+        }
+        
+        
+        //document.write(element.innerText);
+         // header라는 id를 가지고 있는 <h1> 태그를 찾아 변수에 저장합니다.
+        //var element = document.getElementById("header");
+
+        // 요소의 콘텐츠를 변경합니다.
+        //element.innerText = "Hello World!";
+
+        // 요소의 콘텐츠를 출력합니다.
+        //document.write(element.innerText);
+        
+    </script>
+</body>
+
+</html>
