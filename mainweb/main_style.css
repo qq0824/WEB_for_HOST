@@ -1,0 +1,41 @@
+        .lnb {display: none;}
+        body {background: #000000; font-size: 13pt; margin: 0;}
+        /*    태블릿 버전 768~1024   */
+        @media all and (min-width: 768px) and (max-width: 1024px) {
+            .lnb {float: left; width: 25%; display: block; }
+            .content {float: left; width: 75%;}
+            .aside {clear: both;}
+        }
+        /*    pc 버전 1025~   */
+        @media all and (min-width:1025px) {
+            .wrap {max-width: 100%; margin: 0 auto;}
+            .lnb {float: left; width: 20%; display: block; }
+            .content {float: left; width: 50%;}
+            .aside {float: right; width: 30%;}
+        }
+        
+        /* 모바일 버전 기준 ~768 */
+        
+        h1, h2, ul, li, p, div {margin: 0; padding: 0; box-sizing: border-box;
+        margin}
+        
+        h1 { text-align: center; font-size: 25pt; padding: 10pt; color: #fff;
+        position: static; left: 50%; right: 50%;}
+        h2 { font-size: 20pt; color: #ffffff; }
+        li {list-style-type: none;}
+        .clear:after {content: ""; display: block; clear: both;}
+        a {line-height: 1.5pt; color: #ffffff; text-decoration:none } 
+        div > div > div > p {
+            background: rgba(92, 92, 92, 0.5);
+            padding: 10px;
+        }
+        
+        /* body에 마진 붙이니 다 붙음 */
+        header { height: 55pt; background: linear-gradient(to right, #000000, #1f1b52, #410a64);}
+        .lnb li {margin: 10pt; padding: 10pt; background: rgba(25, 24, 26, 0.85);}
+        .content {padding: 20pt;}
+        .ext {margin: 10pt; padding: 20pt; background: rgba(25, 24, 26, 0.85);}
+        footer {padding: 10pt; background: #aaa;}
+        img { width: 30pt; height: 40px;
+
+        }
