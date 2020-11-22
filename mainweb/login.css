@@ -1,0 +1,59 @@
+        .lnb {display: none;}
+        body {background: #000000; font-size: 13pt; margin: 0;}
+
+
+        
+        h1, h2, ul, li, p, div {margin: 0; padding: 0; box-sizing: border-box;
+        margin}
+        header { height: 55pt; background: linear-gradient(to right, #000000, #1f1b52, #410a64);}
+        h1 { text-align: center; font-size: 20pt; padding: 10pt; color: #fff;
+        position: static; left: 50%; right: 50%;}
+        h2 { text-align: center; font-size: 20pt; color: #ffffff; }
+        li {list-style-type: none;}
+        .content { padding: 20px; margin: 0 auto; max-width: 700px;}
+
+
+        /*.clear:after {content: ""; display: block; clear: both;}*/
+        a {line-height: 1.5pt; color: #ffffff; text-decoration:none } 
+        div > div > form {
+            border-radius:10px;
+            background: rgba(48, 13, 64, 0.5);
+            padding: 10px;
+        }
+        /**/
+        table {
+            margin: 0 auto;
+        }
+        th, td {
+            color: white;
+            padding: 5px;
+            
+            border-radius:10px;
+            background: rgba(78, 78, 78, 0.5);
+        }
+        th {
+            width: 30%;
+        }
+        input {
+            width: 100%;
+            height: 50%;
+            font-size: 15pt;
+        }
+        #login, #signup {
+            
+            width: 25%;
+            text-align: center;
+            cursor: pointer;
+            
+        }
+        .on{
+            background: #64179d;
+        }
+        /**/
+        
+        footer {padding: 10pt; background: #aaa;}
+
+        img { width: 30pt; height: 40px;
+
+        }
+        

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동환이 사이트</title>
+    <!-- jquery 불러옴-->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="login.js"></script>
+    <!-- css 불러옴 -->
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div id="menu"></div>
+            <h1><a href="main_web.html">동환이 작품 사이트</a></h1>
+
+        </header>
+        <div class="content">
+
+            <form action="#">
+                <table>
+                    <tr>
+                        <td id="login">Login</td>
+                        <td id="signup">Sign Up</td>
+                    </tr>
+                </table>
+                <table class="log_in" id="table_main">
+                    <tr>
+                        <th><label for="iemail">Email</label></th>
+                        <td><input id="iemail" type="email" placeholder="your email" required="required"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="ipw">P / W</label></th>
+                        <td><input id="ipw" type="password" placeholder="your password" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><a href="#">Don't remember your password?</a></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td colspan="2"><input class="sub" id="sub_log" type="submit" value="LOGIN >"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <footer>
+            <p>&copy;2020 DongHwanKim. All rights reserved.</p>
+            <p><a target="_blank" href="https://open.kakao.com/me/donghwanny"><img src="../image/logo_kakao.png" alt="카톡1:1문의"></a></p>
+        </footer>
+    </div>
+
+</body></html>

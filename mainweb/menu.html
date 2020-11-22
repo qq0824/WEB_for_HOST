@@ -33,6 +33,29 @@
     </script>
     <style>
         * { list-style-type: none; }
+        
+        
+        /*    모바일 버전 ~768   */
+        @media all and (max-width: 768px){
+            body {
+                font-size: 10px;
+            }
+            
+        }
+        /*    태블릿 버전 768~1024   */
+        @media all and (min-width: 768px) and (max-width: 1024px) {
+            body {
+                font-size: 15px;
+            }
+            
+        }
+        /*    pc 버전 1025~   */
+        @media all and (min-width:1025px) {
+            body {
+                font-size: 20px;
+            }
+        }
+        
         .far {
             float: right;
             cursor:pointer;
@@ -49,7 +72,7 @@
         .lnb2 { display: none; }
         .lnb_open {
             padding: 10pt; background: rgba(25, 24, 26, 0.85);
-            font-size: 20pt;
+            font-size: 2em;
             display: inline-block;
         }
         .lnb_color {
@@ -233,7 +256,7 @@
         </div>
         
     </div>
-    <i id="login" class="far fa-user"></i>
+    <a href="login.html"><i id="login" class="far fa-user"></i></a>
     
     
     
